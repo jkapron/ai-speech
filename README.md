@@ -55,7 +55,11 @@ npm install ai-text-to-speech
 ### Basic Example
 
 ```javascript
+// Use this import statement if your project supports ES Modules
 import aiSpeech from 'ai-text-to-speech';
+// OR
+// Use this require statement if your project uses CommonJS modules
+const aiSpeech = require('ai-text-to-speech');
 
 (async () => {
   try {
@@ -73,7 +77,11 @@ import aiSpeech from 'ai-text-to-speech';
 ### Advanced Usage
 
 ```javascript
+// Use this import statement if your project supports ES Modules
 import aiSpeech from 'ai-text-to-speech';
+// OR
+// Use this require statement if your project uses CommonJS modules
+const aiSpeech = require('ai-text-to-speech');
 
 (async () => {
   try {
