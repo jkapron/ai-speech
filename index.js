@@ -45,7 +45,7 @@ const now = (unit) => {
  * @throws Will throw an error if input validation fails or the API call is unsuccessful.
  */
 
-export default async function openaiTTS(options = {}) {
+export default async function aitts(options = {}) {
   const {
     input,
     dest_dir = './',

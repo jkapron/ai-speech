@@ -1,7 +1,7 @@
 {
-  "name": "ai-speech",
+  "name": "ai-text-to-speech",
   "version": "1.0.0",
-  "description": "A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other providers comming soon). ai-speech offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.",
+  "description": "A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other providers comming soon). ai-text-to-speech offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jkapron/ai-speech.git"
+    "url": "git+https://github.com/jkapron/ai-text-to-speech.git"
   },
   "keywords": [
     "openai",
@@ -26,9 +26,9 @@
   "author": "Jerry Kapron, https://www.linkedin.com/in/jerrykapron/",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkapron/ai-speech/issues"
+    "url": "https://github.com/jkapron/ai-text-to-speech/issues"
   },
-  "homepage": "https://github.com/jkapron/ai-speech#readme",
+  "homepage": "https://github.com/jkapron/ai-text-to-speech#readme",
   "dependencies": {
     "openai": "^4.64.0",
     "uuid": "^10.0.0"

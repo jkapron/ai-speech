@@ -1,13 +1,13 @@
-# ai-speech
+# ai-text-to-speech
 
-A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other TTS providers in the works). **ai-speech** offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.
+A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other TTS providers in the works). **ai-text-to-speech** offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.
 
 Developed by Jerry Kapron for everyone to use ;)
 [Buy me a coffee ☕️](https://buymeacoffee.com/jkapron)
 
 ## Table of Contents
 
-- [ai-speech](#ai-speech)
+- [ai-text-to-speech](#ai-text-to-speech)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
@@ -43,10 +43,10 @@ Developed by Jerry Kapron for everyone to use ;)
 
 ## Installation
 
-Install **ai-speech** via NPM:
+Install **ai-text-to-speech** via NPM:
 
 ```bash
-npm install ai-speech
+npm install ai-text-to-speech
 ```
 
 ## Usage
@@ -54,12 +54,12 @@ npm install ai-speech
 ### Basic Example
 
 ```javascript
-import aiSpeech from 'ai-speech';
+import aiSpeech from 'ai-text-to-speech';
 
 (async () => {
   try {
     const audioFilePath = await aiSpeech({
-      input: 'Hello, this is a test of the ai-speech module.',
+      input: 'Hello, this is a test of the ai-text-to-speech module.',
       api_key: 'YOUR_OPENAI_API_KEY', // Or set the OPENAI_API_KEY environment variable
     });
     console.log(`Audio file saved at: ${audioFilePath}`);
@@ -72,12 +72,12 @@ import aiSpeech from 'ai-speech';
 ### Advanced Usage
 
 ```javascript
-import aiSpeech from 'ai-speech';
+import aiSpeech from 'ai-text-to-speech';
 
 (async () => {
   try {
     const audioFilePath = await aiSpeech({
-      input: 'Welcome to the advanced usage of ai-speech!',
+      input: 'Welcome to the advanced usage of ai-text-to-speech!',
       dest_dir: './audio',
       file_name: 'welcome-message',
       voice: 'echo',
@@ -196,4 +196,4 @@ For more information on voice options, see the [OpenAI Text-to-Speech Voice Opti
 
 ---
 
-[Back to top](#ai-speech)
+[Back to top](#ai-text-to-speech)
