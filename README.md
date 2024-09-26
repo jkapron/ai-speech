@@ -52,41 +52,71 @@ npm install ai-text-to-speech
 
 ## Usage
 
-### Basic Example
+
+### How to load the module in your code
 
 ```javascript
 // Use this import statement if your project supports ES Modules
 import aiSpeech from 'ai-text-to-speech';
-// OR
+```  
+
+OR  
+
+```javascript
 // Use this require statement if your project uses CommonJS modules
 const aiSpeech = require('ai-text-to-speech');
+```
 
-(async () => {
+
+
+### Basic Example with async/await
+
+```javascript
+(async () => { // or nested inside another async function
+
   try {
     const audioFilePath = await aiSpeech({
-      input: 'Hello, this is a test of the ai-text-to-speech module.',
-      api_key: 'YOUR_OPENAI_API_KEY', // Or set the OPENAI_API_KEY environment variable
+      input: 'Buy me a coffee if it works for you.'
+      // If the OPENAI_API_KEY environment variable is already set,
+      // you don't have to specify the api_key option
     });
     console.log(`Audio file saved at: ${audioFilePath}`);
   } catch (error) {
     console.error('Error generating speech audio:', error.message);
   }
-})();
-```
 
-### Advanced Usage
+})();
+```  
+
+
+### Basic Example with Promise .then()/.catch()
 
 ```javascript
-// Use this import statement if your project supports ES Modules
-import aiSpeech from 'ai-text-to-speech';
-// OR
-// Use this require statement if your project uses CommonJS modules
-const aiSpeech = require('ai-text-to-speech');
+// This approach can be useful if you prefer working with promises directly
+// or if you're in an environment where async/await is not supported.
 
-(async () => {
+aiSpeech({
+  input: 'Buy me a coffee if it works for you.',
+  // You can explicitly provide your OpenAI API key here
+  api_key: 'YOUR_OPENAI_API_KEY',
+})
+.then((audioFilePath) => {
+    console.log(`Audio file saved at: ${audioFilePath}`);
+})
+.catch((error) => {
+    console.error('Error generating speech audio:', error.message);
+});
+```
+
+
+### Advanced Usage with async/await
+
+```javascript
+(async () => { // or nested inside another async function
+
   try {
     const audioFilePath = await aiSpeech({
-      input: 'Welcome to the advanced usage of ai-text-to-speech!',
+      input: 'Buy me a coffee if it works for you.',
       dest_dir: './audio',
       file_name: 'welcome-message',
       voice: 'echo',
@@ -99,8 +129,34 @@ const aiSpeech = require('ai-text-to-speech');
   } catch (error) {
     console.error('Error generating speech audio:', error.message);
   }
+
 })();
 ```
+
+### Advanced Usage with Promise .then()/.catch()
+
+```javascript
+// This approach can be useful if you prefer working with promises directly
+// or if you're in an environment where async/await is not supported.
+
+aiSpeech({
+    input: 'Buy me a coffee if it works for you.',
+    dest_dir: './audio',
+    file_name: 'welcome-message',
+    voice: 'echo',
+    model: 'tts-1-hd',
+    response_format: 'wav',
+    suffix_type: 'nano',
+    api_key: process.env.OPENAI_API_KEY,
+})
+.then((audioFilePath) => {
+    console.log(`Audio file saved at: ${audioFilePath}`);
+})
+.catch((error) => {
+    console.error('Error generating speech audio:', error.message);
+});
+```
+
 
 ## Options
 
