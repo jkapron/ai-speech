@@ -266,4 +266,5 @@ For more information on voice options, see the [OpenAI Text-to-Speech Voice Opti
 <img src="https://virofend.com/jk_bmc_qr_2.png" />
 </a>
 
+---
 [Back to top](#ai-text-to-speech)
