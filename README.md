@@ -260,7 +260,7 @@ For more information on voice options, see the [OpenAI Text-to-Speech Voice Opti
 *Note*: Ensure compliance with OpenAI's usage policies when integrating this module into your applications.
 
 ---
-[☕️ Buy me a coffee](https://buymeacoffee.com/jkapron)  
+### [☕️ Buy me a coffee](https://buymeacoffee.com/jkapron)  
 
 <a href="https://buymeacoffee.com/jkapron" title="Buy Me A Coffee">
 <img src="https://virofend.com/jk_bmc_qr_2.png" />
