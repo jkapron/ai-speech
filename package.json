@@ -1,6 +1,6 @@
 {
   "name": "ai-text-to-speech",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other providers comming soon). ai-text-to-speech offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.",
   "main": "index.js",
   "type": "module",

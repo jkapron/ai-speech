@@ -3,18 +3,20 @@
 A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other TTS providers in the works). **ai-text-to-speech** offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.
 
 Developed by Jerry Kapron for everyone to use freely 👍🏼  
-#### [☕️ Buy me a coffee](https://buymeacoffee.com/jkapron)
+**[☕️ Buy me a coffee](https://buymeacoffee.com/jkapron)**
 
 ## Table of Contents
 
 - [ai-text-to-speech](#ai-text-to-speech)
-      - [☕️ Buy me a coffee](#️-buy-me-a-coffee)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [Basic Example](#basic-example)
-    - [Advanced Usage](#advanced-usage)
+    - [How to load the module in your code](#how-to-load-the-module-in-your-code)
+    - [Basic Example with async/await](#basic-example-with-asyncawait)
+    - [Basic Example with Promise .then()/.catch()](#basic-example-with-promise-thencatch)
+    - [Advanced Usage with async/await](#advanced-usage-with-asyncawait)
+    - [Advanced Usage with Promise .then()/.catch()](#advanced-usage-with-promise-thencatch)
   - [Options](#options)
     - [`input` (string, required)](#input-string-required)
     - [`dest_dir` (string, optional)](#dest_dir-string-optional)
@@ -33,6 +35,7 @@ Developed by Jerry Kapron for everyone to use freely 👍🏼
   - [License](#license)
   - [Acknowledgements](#acknowledgements)
     - [Audio Format Descriptions:](#audio-format-descriptions)
+    - [☕️ Buy me a coffee](#️-buy-me-a-coffee)
 
 ## Features
 
