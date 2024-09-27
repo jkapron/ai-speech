@@ -263,7 +263,7 @@ For more information on voice options, see the [OpenAI Text-to-Speech Voice Opti
 [☕️ Buy me a coffee](https://buymeacoffee.com/jkapron)  
 
 <a href="" title="Buy Me A Coffee" style="width:fit-content;height:fit-content;background-color:#ffffff;padding:25px">
-<img src="https://virofend.com/jk_bmc_qr.png" />
+<img src="https://virofend.com/jk_bmc_qr.png" width="300" height="300" />
 </a>
 
 [Back to top](#ai-text-to-speech)
