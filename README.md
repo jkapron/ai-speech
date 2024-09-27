@@ -161,42 +161,34 @@ aiSpeech({
 ## Options
 
 ### `input` (string, required)
-
 The text to generate audio for. **Maximum length is 4096 characters**.
   
 
 ### `dest_dir` (string, optional)
-
 The destination directory to save the audio file. **Default**: `'./'` (current directory).
   
   
 ### `file_name` (string, optional)
-
 The base name of the output file. **Default**: `'speech-audio'`.
   
   
 ### `voice` (string, optional)
-
 The voice to use for speech synthesis. **Default**: `'nova'`.
   
   
 ### `model` (string, optional)
-
 The TTS model to use. **Default**: `'tts-1'`.
   
   
 ### `response_format` (string, optional)
-
 The audio format for the output file. **Default**: `'mp3'`.
   
   
 ### `suffix_type` (string, optional)
-
 The type of unique suffix used in the file name. **Default**: `'uuid'`.
   
   
 ### `api_key` (string, optional)
-
 Your OpenAI API key. **Default**: The value of the `OPENAI_API_KEY` environment variable.
   
   
