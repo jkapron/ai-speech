@@ -35,7 +35,7 @@ const now = (unit) => {
  * @param {Object} options - The options for generating speech audio.
  * @param {string} options.input - The text to generate audio for. The maximum length is 4096 characters.
  * @param {string} [options.dest_dir='./'] - The destination directory to save the audio file. Default value is './'.
- * @param {string} [options.file_name='speech-audio'] - The base name of the output file. Default value is 'speech-audio'.
+ * @param {string} [options.file_name='speech-audio'] - The base name of the output file. Default value is 'speech-audio'. Used as the prefix of the name of the generated audio file.
  * @param {string} [options.voice='nova'] - The voice to use for speech synthesis. Supported voices are `alloy`, `echo`, `fable`, `onyx`, `nova`, and `shimmer`.
  * @param {string} [options.model='tts-1'] - The TTS model to use. Valid values are `tts-1` or `tts-1-hd`
  * @param {string} [options.response_format='mp3'] - The audio format for the output file. The default response format is 'mp3', but other formats like 'opus', 'aac', 'flac', and 'pcm' are available.
@@ -58,20 +58,19 @@ export default async function aitts(options = {}) {
   } = options;
 
 
-  // check if text input was provided
+  // Check if text input was provided
   if (!input) {
     throw new Error('No input text provided.');
   }
 
-
+  // Input lenght validation
   if (input.length > 4096) {
     throw new Error(
       'Input text exceeds the maximum allowed length of 4096 characters.'
     );
   }
-  
 
-
+  // Voice option validation
   if (!allowedVoices.includes(voice)) {
     throw new Error(
       `Invalid voice '${voice}'. Allowed voices are: ${allowedVoices.join(
@@ -80,6 +79,7 @@ export default async function aitts(options = {}) {
     );
   }
 
+  // Model option validation
   if (!allowedModels.includes(model)) {
     throw new Error(
       `Invalid model '${model}'. Allowed models are: ${allowedModels.join(
@@ -88,6 +88,7 @@ export default async function aitts(options = {}) {
     );
   }
 
+  // Model option validation
   if (!allowedFormats.includes(response_format)) {
     throw new Error(
       `Invalid response format '${response_format}'. Allowed formats are: ${allowedFormats.join(
@@ -155,10 +156,7 @@ export default async function aitts(options = {}) {
 
   const speechFile = path.resolve(
     dir_path,
-    // `${file_name ?? 'speech-audio'}${suffix?('-'+suffix):''}.${response_format}`
-    // `${file_name}${suffix ? '-' + suffix : ''}.${response_format}`
     `${file_name || 'speech-audio'}${suffix ? '-' + suffix : ''}.${response_format}`
-
   );
 
   try {
