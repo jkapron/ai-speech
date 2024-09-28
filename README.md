@@ -1,5 +1,7 @@
 # ai-text-to-speech
 
+*Simplify your text-to-speech integration like never before!*
+
 A powerful and straightforward Node.js module for generating speech audio from text using the OpenAI API (support for other TTS providers in the works). **ai-text-to-speech** offers a simple and robust interface to convert text into high-quality speech audio files in various formats and voices.
 
 Developed by Jerry Kapron for everyone to use freely 👍🏼  
