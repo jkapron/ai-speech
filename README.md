@@ -73,7 +73,6 @@ const aiSpeech = require('ai-text-to-speech');
 ```
 
 
-
 ### Basic Example with async/await
 
 ```javascript
